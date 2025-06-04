@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const cdk = require("aws-cdk-lib");
+const sns_alerting_system_stack_1 = require("../lib/sns-alerting-system-stack");
+const app = new cdk.App();
+new sns_alerting_system_stack_1.SnsAlertingSystemStack(app, 'SnsAlertingSystemStack', {
+    env: { account: '491085391207', region: 'ap-south-1' },
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic25zLWFsZXJ0aW5nLXN5c3RlbS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbInNucy1hbGVydGluZy1zeXN0ZW0udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQ0EsbUNBQW1DO0FBQ25DLGdGQUEwRTtBQUUxRSxNQUFNLEdBQUcsR0FBRyxJQUFJLEdBQUcsQ0FBQyxHQUFHLEVBQUUsQ0FBQztBQUMxQixJQUFJLGtEQUFzQixDQUFDLEdBQUcsRUFBRSx3QkFBd0IsRUFBRTtJQUd2RCxHQUFHLEVBQUUsRUFBRSxPQUFPLEVBQUUsY0FBYyxFQUFFLE1BQU0sRUFBRSxZQUFZLEVBQUU7Q0FFeEQsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiIyEvdXNyL2Jpbi9lbnYgbm9kZVxuaW1wb3J0ICogYXMgY2RrIGZyb20gJ2F3cy1jZGstbGliJztcbmltcG9ydCB7IFNuc0FsZXJ0aW5nU3lzdGVtU3RhY2sgfSBmcm9tICcuLi9saWIvc25zLWFsZXJ0aW5nLXN5c3RlbS1zdGFjayc7XG5cbmNvbnN0IGFwcCA9IG5ldyBjZGsuQXBwKCk7XG5uZXcgU25zQWxlcnRpbmdTeXN0ZW1TdGFjayhhcHAsICdTbnNBbGVydGluZ1N5c3RlbVN0YWNrJywge1xuICBcbiBcbiAgIGVudjogeyBhY2NvdW50OiAnNDkxMDg1MzkxMjA3JywgcmVnaW9uOiAnYXAtc291dGgtMScgfSxcblxufSk7Il19

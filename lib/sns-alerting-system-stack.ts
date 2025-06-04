@@ -11,7 +11,7 @@ export class SnsAlertingSystemStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    // Lambda Function
+  
     const fn = new lambda.Function(this, 'MyFunction', {
       runtime: lambda.Runtime.NODEJS_18_X,
       handler: 'sns.handler',
@@ -42,4 +42,6 @@ export class SnsAlertingSystemStack extends cdk.Stack {
     errorAlarm.addAlarmAction(new cw_actions.SnsAction(topic));
   }
 }
+
+
 
